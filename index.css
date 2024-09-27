@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: default;
+}
+
+#fundo{
+
+}
+body{
+    background: url(fundo.jpg);
+}
+
+#body{
+    font-family: "Exo";
+    background: rgba(0, 0, 0, 0.818);
+    height: 929px;
+}
+
+header{
+    position: fixed;
+    background-color: rgba(0, 0, 255, 0);
+    padding: 3rem;
+    width: 100%;
+
+}
+
+header ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+}
+
+header ul a{
+    position: relative;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-left: 90px;
+    font-weight: 290;
+}
+
+header ul a:hover{
+    color:rgb(255, 94, 0);
+    transition: all 0.2s ease-in-out;
+    font-weight: 500;
+}
+
+header ul #model{
+    color:rgb(255, 255, 255);
+    font-weight: 500;
+}
+
+header ul #model::after{
+    content: '';
+    width: 100%;
+    left: 0%;
+    height: 1px;
+    bottom: -10px;
+    position: absolute;
+    background-color: rgb(255, 81, 0);
+    transition: all 0.2s;
+
+}
+
+header ul #model:hover::after{
+    width: 100%;
+}
+
+
+ a img{
+    z-index: 2;
+    position: absolute;
+    top: -10px;
+    padding-left: 30px;
+    width: 11%;
+    filter: invert() drop-shadow(0px 0px 70px rgba(184, 183, 183, 0.9));
+
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background: rgba(255, 255, 255, 0);
+    width: 1000px;
+    position: absolute;
+    top: 29%;
+    left: 47%;
+    height: 500px;
+}
+
+.container img{
+    width: 100%;
+    filter: drop-shadow(0px 0px 90px rgba(81, 81, 81, 0.9));
+}
+
+.container h1{
+    position: absolute;
+    margin-bottom: 430px;
+    display: '';
+    color: rgb(255, 255, 255);
+    opacity: 0.2;
+    z-index: 0;
+    font-size: 210px;
+    letter-spacing: 25px;
+    
+}
+
+.container h2{
+    position: absolute;
+    margin-bottom: 660px;
+    display: '';
+    color: rgb(255, 255, 255);
+    opacity: 1;
+    z-index: 0;
+    font-size: 50px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+main{
+    position: absolute;
+    background: rgba(230, 7, 7, 0);
+    top: 21%;
+    left: 5%;
+    width: 700px;
+    height: 400px;
+}
+
+main h1{
+    display: inline;
+    color: white;
+    font-size: 115px;
+    text-transform: uppercase;
+}
+
+main h2, p{
+    color: white;
+    text-transform: uppercase;
+}
+
+#bg{
+    letter-spacing: 10px;
+}
+
+main h2{
+    font-size: 45px;
+    font-weight: 500;
+}
+
+main p{
+    margin-top: 30px;
+    font-weight: 200;
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+
+main button{
+    text-transform: uppercase;
+    font-family: "Exo";
+    margin-top: 30px;
+    width: 200px;
+    height: 45px;
+    font-size: 25px;
+    font-weight: 300;
+    color: #fff;
+    background: transparent;
+    border-radius: 5px 15px 5px 15px;
+    border: 1.4px solid white;
+}
+
+main button:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 115, 0);
+    transition: all 0.2s;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+#inf{
+    text-align: center;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20.5px;
+    top: 770px;
+    left: 850px;
+    width: 250px;
+    height: 100px;
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    background-color: #212020;
+    border: 1px solid white;
+    color: white;
+    font-weight: 500;
+}
+
+#inf:hover{
+    transform: scale(1.1) rotate(1deg) translateY(10px);
+    background-color: #d34300;
+    font-weight: 400;
+    transition: all 0.5s ease-in-out;
+}
+
+#ins{
+    text-align: center;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16.5px;
+    top: 770px;
+    left: 1100px;
+    width: 250px;
+    height: 100px;
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    background-color: #212020;
+    border: 1px solid white;
+    color: white;
+    font-weight: 500;
+}
+
+#ins:hover{
+    transform: scale(1.1) rotate(1deg) translateY(10px);
+    background-color: #d34300;
+    font-weight: 400;
+    transition: all 0.5s ease-in-out;
+}
+
+#inw{
+    text-align: center;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16.5px;
+    top: 770px;
+    left: 1355px;
+    width: 250px;
+    height: 100px;
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    background-color: #212020;
+    border: 1px solid white;
+    color: white;
+    font-weight: 500;
+}
+
+#inw:hover{
+    transform: scale(1.1) rotate(1deg) translateY(10px);
+    background-color: #d34300;
+    font-weight: 400;
+    transition: all 0.5s ease-in-out;
+}
+
+#inu{
+    text-align: center;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16.5px;
+    top: 740px;
+    left: 1665px;
+    width: 160px;
+    height: 160px;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    background-color: #2e2e2ead;
+    border: 1px solid rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+}
+
+#inu:hover{
+    transform: scale(1.1) rotate(1deg) translateY(10px);
+    background-color: #ff4d00;
+    color: white;
+    font-weight: 400;
+    transition: all 0.5s ease-in-out;
+}
+
+#inu span{
+    margin-bottom: 10px;
+}
+
+#inr{
+    text-align: center;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16.5px;
+    top: 770px;
+    left: 600px;
+    width: 250px;
+    height: 100px;
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    background-color: #212020;
+    border: 1px solid white;
+    color: white;
+    font-weight: 500;
+}
+
+#inr:hover{
+    transform: scale(1.1) rotate(1deg) translateY(10px);
+    background-color: #d34300;
+    font-weight: 400;
+    transition: all 0.5s ease-in-out;
+}
+
+#frrr{
+    text-align: center;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16.5px;
+    top: 800px;
+    left: 100px;
+    width: 50px;
+    height: 50px;
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    background-color: #3227ff;
+    font-weight: 500;
+}
+
+#frr{
+    text-align: center;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16.5px;
+    top: 800px;
+    left: 140px;
+    width: 50px;
+    height: 50px;
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    background-color: #ffffff;
+    font-weight: 500;
+}
+#fr{
+    text-align: center;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16.5px;
+    top: 800px;
+    left: 180px;
+    width: 50px;
+    height: 50px;
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    background-color: #ff0000;
+    font-weight: 500;
+}
+
+.flex{
+    display: flex;
+    justify-content: flex-end
+
+}
+
+.btn{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 37%;
+    left: 83%;
+    width: 160px;
+    text-align: center;
+    align-items: center;
+    height: 40px;
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    background-color: #ff5500;
+    border-bottom: 2px solid white;
+}
+
+.btn a, .btnn a{
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    z-index: 3;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btnn{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 37%;
+    left: 90%;
+    width: 160px;
+    text-align: center;
+    align-items: center;
+    height: 40px;
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    background-color: #ff5500;
+    border-top: 2px solid white;
+}
+
+.btnn:hover, .btn:hover{
+    background: rgb(255, 111, 0);
+    transform: scale(1.12);
+    transition: all 0.3s;
+}
+
+
+
+
+
+
+
+
